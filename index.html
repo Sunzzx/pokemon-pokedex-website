@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Your Digital Pokémon Encyclopedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokédex</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search Pokémon by name or number...">
+            <select id="type-filter">
+                <option value="">All Types</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div id="pokemon-grid" class="pokemon-grid"></div>
+        <div id="pokemon-details" class="pokemon-details hidden">
+            <button id="close-btn">×</button>
+            <div class="details-content"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
